@@ -30,6 +30,7 @@ PCB尺寸统一为74mm\*25mm，孔位见PCB丝印。
 | 物料名称               | 参数/型号             | 数量 | 购买链接                                                                                         |
 | --------------------- | --------------------- | ---- | ----------------------------------------------------------------------------------------------- |
 | 80mm服务器风扇         | 8038 三洋 12V 1.8A    | 1    | https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3a172e8dN2QdaD&id=12923471278&_u=a2ncf4788bf0  |
+| 80mm风扇网罩           |                      | 1-2  | https://item.taobao.com/item.htm?spm=a1z09.2.0.0.67002e8dZDwEzv&id=652052250420&_u=a2ncf478591d |
 | STM8S103F3P6最小系统板 | 26Pin版本             | 1    | https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3a172e8drIuggJ&id=524863693731&_u=a2ncf4783ec0 |
 | PD诱骗器               | 12V                  | 1    | https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3a172e8drIuggJ&id=639940641909&_u=a2ncf478ed00 |
 | DC降压模块             | 12V转5V               | 1    | https://item.taobao.com/item.htm?spm=a1z09.2.0.0.67002e8dtGKmA8&id=560178970252&_u=a2ncf478929c |
@@ -38,4 +39,6 @@ PCB尺寸统一为74mm\*25mm，孔位见PCB丝印。
 | 10K直插电阻            | AXIAL-0.4            | 3    | 略                                                                                              |
 | xh2.54 弯头座          | 4Pin                 | 1    | https://item.taobao.com/item.htm?spm=a1z09.2.0.0.67002e8d309Yz2&id=587341434964&_u=a2ncf478175b |
 | 4Pin风扇座             |                      | 1    | 任选，可用排针代替                                                                               |
+| M3螺丝                 | 3-5mm长度即可        | 1    | 任选，固定PCB用                                                                                  |
+| M4螺丝                 | 3-5mm长度即可        | 8    | 可能需要选配螺母，固定风扇网罩、外壳、风扇用，具体型号外观随意                                        |
 
