@@ -34,7 +34,7 @@ static void TIM2_Config(void)
 
 static void GPIO_Config(void)
 {
-    GPIO_Init(GPIOC, GPIO_PIN_5, GPIO_MODE_IN_PU_NO_IT);
+    GPIO_Init(GPIOC, GPIO_PIN_5, GPIO_MODE_IN_FL_NO_IT);
 }
 
 static void TIM1_Config(void)
