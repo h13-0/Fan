@@ -8,6 +8,10 @@
 
 "--verify_download" 
 
+"--option_bytes_file" 
+
+"D:\Projects\Fan\STM8\Project\FAN\OptionBytesConfig.obc" 
+
 "--erase_memory" 
 
 

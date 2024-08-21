@@ -25,6 +25,15 @@ PCB尺寸统一为74mm\*25mm，孔位见PCB丝印。
 ![](./Images/STM8S103F2F3%20Module区别.jpg)
 （上为26Pin，下为28Pin）
 
+## 程序刷入方法(无需IDE)
+1. 获取[STVP-STM8](https://www.st.com.cn/zh/development-tools/stvp-stm8.html#st-get-software)
+2. 打开STVP，依次进行如下操作：
+    1. 配置调试器和目标芯片：
+    2. 在 `PROGRAM MEMORY` 页面打开 [Release]() 中压缩包中的 `Fan.hex` ![](./Images/Step2.2.png)
+    3. 在 `OPTION BYTE` 页面将 `AFR0` 配置为使能 TIM1_CH1 和 TIM1_CH2：![](./Images/Step2.3.png)
+    4. 在工具栏 `Program` 点击 `All tabs` 将固件和配置下载到STM8FxP6单片机中：![](./Images/Step2.4.png)
+
+
 ## BOM
 
 | 物料名称               | 参数/型号             | 数量 | 购买链接                                                                                         |

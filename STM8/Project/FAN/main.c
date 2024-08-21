@@ -24,17 +24,17 @@ static void TIM2_Config(void)
   TIM2_OC1Init(TIM2_OCMODE_PWM1, TIM2_OUTPUTSTATE_ENABLE, 0, TIM2_OCPOLARITY_HIGH);
   TIM2_CCxCmd(TIM2_CHANNEL_1, ENABLE);
   TIM2_OC1PreloadConfig(ENABLE);
-  //TIM2_CtrlPWMOutputs(ENABLE);
-
   TIM2_ARRPreloadConfig(ENABLE);
 
+  GPIO_Init(GPIOC, GPIO_PIN_5, GPIO_MODE_OUT_PP_HIGH_FAST);
+  
   /* TIM2 enable counter */
   TIM2_Cmd(ENABLE);
 }
 
 static void GPIO_Config(void)
 {
-    GPIO_Init(GPIOC, GPIO_PIN_5, GPIO_MODE_IN_FL_NO_IT);
+    GPIO_Init(GPIOD, GPIO_PIN_4, GPIO_MODE_IN_FL_NO_IT);
 }
 
 static void TIM1_Config(void)
@@ -78,11 +78,11 @@ void main(void)
     CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1);
   
     // Init GPIO.
-    // GPIO_Input -> Encoder Push (C5)
+    // GPIO_Input -> Encoder Push (D4)
     GPIO_Config();
   
     // Init TIM2.
-    // TIM2 -> PWM (D4)
+    // TIM2 -> PWM (C5)
     TIM2_Config();
   
     // TIM1 -> Encoder C6 C7.
@@ -90,7 +90,7 @@ void main(void)
   
     while(1)
     {
-        if(GPIO_ReadInputPin(GPIOC, GPIO_PIN_5))
+        if(!GPIO_ReadInputPin(GPIOD, GPIO_PIN_4))
         {
             int32_t count = 0;
             count = TIM1_GetCounter();
